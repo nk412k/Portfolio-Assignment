@@ -1,0 +1,19 @@
+.section img{
+    width: 100%;
+}
+.section h4{
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+.section h6{
+    margin-top: 0px;
+    text-align: right;
+}
+.main {
+    background-color: aliceblue;
+    padding: 20px;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 40rem;
+}
