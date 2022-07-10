@@ -1,0 +1,43 @@
+.gridd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.card__header,
+.card__content {
+  padding: 1rem;
+}
+
+.card__content p {
+  margin: 0;
+}
+
+.card__image {
+  height: 200px;
+}
+
+.card__image img {
+  height: 180px;
+  margin: 10px;
+}
+
+
+
+.project__title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+

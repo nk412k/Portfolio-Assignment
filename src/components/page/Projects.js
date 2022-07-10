@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useCallback, useEffect, useState } from "react";
+import './project.css';
 
 const Project = () => {
   const [projects,setProjects]=useState([])
@@ -24,34 +25,25 @@ const Project = () => {
           <h6>
             <strong>PROJECTS</strong>
           </h6>
-          <table className="striped">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Date</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              {projects &&
-                projects.map((project) => {
-                  return (
-                    <tr key={project._id}>
-                      <td>{project.title}</td>
-                      <td>{project.date}</td>
-                      <td>
-                        <Link
-                          to={`/projects/${project._id}`}
-                          className="btn blue lighten-2"
-                        >
-                          View
-                        </Link>
-                      </td>
-                    </tr>
-                  );
-                })}
-            </tbody>
-          </table>
+          <div className="gridd">
+          {projects &&
+            projects.map((project) => {
+              return (
+                <Link
+                  className="card"
+                  key={project.title}
+                  to={`/projects/${project._id}`}
+                >
+                  <header className="card__header">
+                    <p className="project__title">{project.title}</p>
+                  </header>
+                  <div className="card__image">
+                    <img src={`${project.imageUrl}`} alt={project.title} />
+                  </div>
+                </Link>
+              )
+            })}
+            </div>
         </div>
       </div>
     </div>
