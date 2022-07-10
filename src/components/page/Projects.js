@@ -18,7 +18,7 @@ const Project = () => {
     },[fetchProjectHandler]);
 
   return (
-    <div id='projects'>
+    <div id="projects">
       <div className="card">
         <div className="card-content">
           <h6>
@@ -33,19 +33,23 @@ const Project = () => {
               </tr>
             </thead>
             <tbody>
-              {projects && projects.map(project=>{
-              return(
-              <tr key={project._id}>
-                <td>{project.title}</td>
-                <td>{project.date}</td>
-                <td>
-                  <Link to={`/projects/${project._id}`} className="btn blue lighten-2">
-                    View
-                  </Link>
-                </td>
-              </tr>
-              )})}           
-              
+              {projects &&
+                projects.map((project) => {
+                  return (
+                    <tr key={project._id}>
+                      <td>{project.title}</td>
+                      <td>{project.date}</td>
+                      <td>
+                        <Link
+                          to={`/projects/${project._id}`}
+                          className="btn blue lighten-2"
+                        >
+                          View
+                        </Link>
+                      </td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>

@@ -1,3 +1,4 @@
+import './skills.css';
 const Skills=()=>{
     return (
       <div id="skills">
@@ -6,85 +7,57 @@ const Skills=()=>{
             <h6>
               <strong>PROFESSIONAL SKILLS</strong>
             </h6>
-            <div className="row mt-top">
-              <div className="col s6">
-                <p>React Js</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "100%" }}
-                  ></div>
-                </div>
+            <div className="grid">
+              <div className="grid_item">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                  alt="react"
+                />
+                <p>React JS</p>
               </div>
-              <div className="col s6">
-                <p>Node Js</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
+              <div className="grid_item">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                  alt="react"
+                />
+                <p>React JS</p>
               </div>
-            </div>
-            <div className="row">
-              <div className="col s6">
+              <div className="grid_item">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                  alt="Node js"
+                />
+                <p>Node JS</p>
+              </div>
+              <div className="grid_item">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="javascript"
+                  />
                 <p>JavaScript</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
               </div>
-              <div className="col s6">
-                <p>MongoDB</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "80%" }}
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col s6">
-                <p>CSS</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "95%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="col s6">
+              <div className="grid_item">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                  alt="Python"
+                />
                 <p>Python</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "95%" }}
-                  ></div>
-                </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col s6">
-                <p>Java</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "80%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="col s6">
+              <div className="grid_item">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                  alt="C++"
+                />
                 <p>C++</p>
-                <div className="progress grey lighten-1">
-                  <div
-                    className="determinate blue"
-                    style={{ width: "95%" }}
-                  ></div>
-                </div>
               </div>
+              <div className="grid_item">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                  alt="MongoDB"
+                />
+                <p>MongoDB</p>
+              </div>
+              
             </div>
           </div>
         </div>

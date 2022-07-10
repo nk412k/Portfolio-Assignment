@@ -1,0 +1,14 @@
+.grid {  
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.grid_item{
+    display: inline-block;
+  text-align: center;
+  padding: 50px;
+}
